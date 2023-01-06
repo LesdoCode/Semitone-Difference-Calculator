@@ -1,0 +1,263 @@
+html,
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 200px) {
+	html,
+	body {
+		font-size: 12px;
+	}
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 auto;
+	width: min(100%, 1300px);
+	background-color: #339dff;
+	color: white;
+	padding: 1em 0;
+	border-bottom-left-radius: 0.2em;
+	border-bottom-right-radius: 0.2em;
+}
+
+.container {
+	width: min(100%, 1000px);
+	margin-inline: auto;
+	max-width: -webkit-fill-available;
+	max-width: -moz-available;
+	max-width: fill-available;
+}
+
+.container h3 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+.container .notes {
+	margin: 1em 2%;
+	height: auto;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(10em, 1fr)) [auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+	grid-gap: 1em;
+}
+
+.container .notes .note {
+	font-size: 2em;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	padding: 1.5em;
+	background-color: #0084ff;
+	width: min(100%, 14em);
+	margin: auto;
+	max-width: -webkit-fill-available;
+	max-width: -moz-available;
+	max-width: fill-available;
+	border-radius: 0.2em;
+}
+
+.controls {
+	width: min(100%, 1000px);
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.controls .buttons {
+	margin: 1.5em auto;
+	padding: 1em 5%;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(12em, 1fr)) [auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+	grid-gap: 2em;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-width: -webkit-fill-available;
+	min-width: -moz-available;
+	min-width: fill-available;
+}
+
+.controls .btn {
+	width: -webkit-fill-available;
+	width: -moz-available;
+	width: fill-available;
+	border-radius: 0.2em;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+}
+
+.controls .btn:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.controls .btn-action {
+	border: 1px solid #66b5ff;
+	background-color: #99ceff;
+	font-size: 1.1em;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	white-space: nowrap;
+	padding: 1.2em 2.2em;
+}
+
+.controls .select-notes-section {
+	margin-inline: auto;
+	width: min(100%, 1000px);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.controls .select-notes-section .label-container {
+	width: 100%;
+	text-align: center;
+}
+
+.controls .select-notes-section .label-container label {
+	color: #003566;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.2vw;
+	text-align: center;
+	min-width: 100%;
+}
+
+.controls .select-notes-section input {
+	font-size: 1.6em;
+	padding: 0.2em 0.3em;
+	margin: 0.4em 0.4em;
+	text-align: center;
+	max-width: -webkit-fill-available;
+	max-width: -moz-available;
+	max-width: fill-available;
+}
+
+.explanation {
+	border: 1px solid #0084ff;
+	font-size: 1em;
+	font-weight: bold;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(3em, 1fr)) [auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+	grid-gap: 0.5em;
+	margin: 1em auto;
+	padding: 1em 3vw;
+	max-width: 90%;
+	-webkit-box-shadow: 0px 0px 10px 0px #99ceff;
+	box-shadow: 0px 0px 10px 0px #99ceff;
+}
+
+.explanation .note {
+	margin-inline: 0.8em;
+	text-align: center;
+}
+
+.explanation .note-highlight {
+	background-color: white;
+	color: #0084ff;
+}
+
+.game-stats {
+	width: -webkit-fill-available;
+	width: -moz-available;
+	width: fill-available;
+	margin: 0.9em 0 3em;
+	padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	.game-stats {
+		font-size: max(3vw, 0.8rem);
+		font-weight: normal;
+		padding-inline: 2%;
+	}
+}
+
+.game-stats-container {
+	width: min(100%, 1000px);
+	margin: 0 auto 3em;
+	-webkit-box-shadow: 0px 0px 10px 0px #003566;
+	box-shadow: 0px 0px 10px 0px #003566;
+	padding: 0.3em 2em 2em;
+	background-color: #fcfcfc;
+}
+
+.game-stats-container h2 {
+	color: #00284d;
+}
+
+.game-stats-container .stat {
+	font-size: 1.3em;
+	width: min(100%, 500px);
+	margin: 0.4em auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.game-stats-container .stat-title {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #595959;
+}
+
+.gif {
+	width: 1em;
+}
+
+.hidden {
+	display: none;
+}
+/*# sourceMappingURL=style.css.map */

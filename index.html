@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Semitone difference calculator</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="src/webpack-bundle/bundle.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+			media="print"
+			onload="this.media='all'"
+		/>
+	</head>
+	<body>
+		<h1>
+			Semitone difference calculator
+			<i class="bi bi-music-note-list"></i>
+		</h1>
+		<div class="container">
+			<h3>What's the semitone difference between the two notes?</h3>
+			<div class="display">
+				<div class="notes">
+					<span class="note first-note"></span>
+					<span class="note second-note"></span>
+				</div>
+			</div>
+		</div>
+		<section class="answer-reveal-section">
+			<div class="explanation" id="explanation"></div>
+			<h2 class="game-message">
+				The answer is <span class="reveal-answer"></span>
+			</h2>
+		</section>
+		<div class="controls">
+			<div class="select-notes-section">
+				<div class="answer-section">
+					<div class="label-container">
+						<label for="answer">Enter your answer here</label>
+					</div>
+					<input
+						type="number"
+						name="answer"
+						id="answer"
+						placeholder="Answer"
+						class="text-input"
+					/>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<button id="get-random-notes" class="btn btn-action get-random-notes">
+					Get Random Notes
+				</button>
+				<button id="reveal-answer" class="btn btn-action reveal-answer">
+					Reveal Answer
+				</button>
+				<button id="submit-answer" class="btn btn-action submit-answer-button">
+					Check My Answer
+				</button>
+			</div>
+		</div>
+		<div class="game-stats">
+			<div class="game-stats-container">
+				<h2>Game Stats</h2>
+				<div class="stat">
+					<span class="stat-title">Your Streak:</span>
+					<span class="stat-value" id="streak"></span>
+				</div>
+
+				<div class="stat">
+					<span class="stat-title">Correct Answers:</span>
+					<span class="stat-value" id="correct-answers"></span>
+				</div>
+
+				<div class="stat">
+					<span class="stat-title">Wrong Answers:</span>
+					<span class="stat-value" id="wrong-answers"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

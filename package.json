@@ -1,0 +1,33 @@
+{
+	"name": "Tebogo-Lemekoana-199-semitone-difference-basic-algorithm-javascript",
+	"version": "1.0.0",
+	"description": "semitone difference - basic algorithm (199)\r For raw project instructions see: http://syllabus.africacode.net/projects/semitone-challenge/basic-algorithm/",
+	"main": "index.js",
+	"scripts": {
+		"bundle": "webpack --config webpack.config.js",
+		"test": "jasmine",
+		"autoBundle": "nodemon auto-bundle.js --ignore 'bundle.js'",
+		"autoTest": "nodemon npm test",
+		"build": "npm run bundle"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Umuzi-org/Tebogo-Lemekoana-199-semitone-difference-basic-algorithm-javascript.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Umuzi-org/Tebogo-Lemekoana-199-semitone-difference-basic-algorithm-javascript/issues"
+	},
+	"homepage": "https://github.com/Umuzi-org/Tebogo-Lemekoana-199-semitone-difference-basic-algorithm-javascript#readme",
+	"dependencies": {
+		"jasmine": "^3.8.0",
+		"jsdom": "^19.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15",
+		"webpack": "^5.70.0",
+		"webpack-cli": "^4.9.2"
+	}
+}
